@@ -39,7 +39,8 @@ const curriculumLevels = [
       "القواميس (dictionaries)",
       "الدوال (functions)",
     ],
-    project: ""
+    project:
+      "مشروع: إنشاء آلة حاسبة بسيطة بلغة Python تتضمن التعامل مع المدخلات وإجراء العمليات الحسابية الأساسية.",
   },
   {
     id: 2,
@@ -62,7 +63,8 @@ const curriculumLevels = [
       "التعددية الشكلية (Polymorphism)",
       "المُهيئات (__init__) والدوال الخاصة",
     ],
-    project: "",
+    project:
+      "مشروع: بناء نظام مكتبة بسيط باستخدام OOP لإضافة وحذف وعرض الكتب وتسجيل استعارة وإرجاع الكتب.",
   },
   {
     id: 3,
@@ -86,7 +88,8 @@ const curriculumLevels = [
       "Recursion – المفاهيم والتطبيق",
       "أمثلة على هياكل البيانات في مشكلات واقعية",
     ],
-    project: "",
+    project:
+      "مشروع: إنشاء تطبيق لإدارة المهام (To-Do List) يدعم التصنيف، البحث، وإعادة الترتيب باستخدام القوائم والمكدسات والطوابير.",
   },
   {
     id: 4,
@@ -109,9 +112,11 @@ const curriculumLevels = [
       "Dynamic Programming – Fibonacci – Knapsack",
       "Divide and Conquer – مفاهيم تطبيقية",
     ],
-    project: "",
+    project:
+      "مشروع: بناء محرك بحث بسيط يبحث في ملفات نصية باستخدام خوارزميات البحث وتحسين الأداء باستخدام خوارزميات الفرز وتحليل Big O.",
   },
 ];
+
 const finalLevel = {
   id: 5,
   title: "التخصص",
