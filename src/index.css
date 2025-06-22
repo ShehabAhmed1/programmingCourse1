@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+/* الألوان المخصصة */
+:root {
+  --primary: #007acc;
+  --primary-foreground: #ffffff;
+  --secondary: #f8f9fa;
+  --secondary-foreground: #495057;
+  --accent: #ffd700;
+  --accent-foreground: #212529;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --muted: #f9fafb;
+  --muted-foreground: #6b7280;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #007acc;
+  --background: #ffffff;
+  --foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --radius: 0.5rem;
+  
+  /* متغيرات التدرج */
+  --tw-gradient-from: #000000;
+  --tw-gradient-to: transparent;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to-position: 100%;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* فئات CSS مخصصة */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary-foreground {
+  background-color: var(--primary-foreground);
+}
+
+.text-primary-foreground {
+  color: var(--primary-foreground);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-secondary-foreground {
+  background-color: var(--secondary-foreground);
+}
+
+.text-secondary-foreground {
+  color: var(--secondary-foreground);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent-foreground {
+  background-color: var(--accent-foreground);
+}
+
+.text-accent-foreground {
+  color: var(--accent-foreground);
+}
+
+.bg-destructive {
+  background-color: var(--destructive);
+}
+
+.text-destructive {
+  color: var(--destructive);
+}
+
+.bg-destructive-foreground {
+  background-color: var(--destructive-foreground);
+}
+
+.text-destructive-foreground {
+  color: var(--destructive-foreground);
+}
+
+.bg-muted {
+  background-color: var(--muted);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.bg-muted-foreground {
+  background-color: var(--muted-foreground);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.bg-card {
+  background-color: var(--card);
+}
+
+.text-card {
+  color: var(--card);
+}
+
+.bg-card-foreground {
+  background-color: var(--card-foreground);
+}
+
+.text-card-foreground {
+  color: var(--card-foreground);
+}
+
+.border-border {
+  border-color: var(--border);
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+.border-input {
+  border-color: var(--input);
+}
+
+.ring-ring {
+  --tw-ring-color: var(--ring);
+}
+
+/* فئات التدرج المخصصة */
+.from-primary\/20 {
+  --tw-gradient-from: rgb(0 122 204 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 122 204 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-accent\/10 {
+  --tw-gradient-to: rgb(255 215 0 / 0.1) var(--tw-gradient-to-position);
+}
+
+/* فئات التدرج المباشرة */
+/*.bg-gradient-primary-accent {
+  background-image: linear-gradient(to bottom right, 
+    rgba(0, 122, 204, 0.2) 0%, 
+    rgba(255, 215, 0, 0.1) 100%
+  );
+}*/
+
+.bg-gradient-primary-accent-20-10 {
+  background-image: linear-gradient(to bottom right, 
+    rgba(0, 122, 204, 0.2) 0%, 
+    rgba(255, 215, 0, 0.1) 100%
+  );
+}*/
+
+.bg-gradient-primary-20 {
+  background-image: linear-gradient(to bottom right, 
+    rgba(0, 122, 204, 0.2) 0%, 
+    rgba(0, 122, 204, 0) 100%
+  );
+}
+
+.bg-gradient-accent-10 {
+  background-image: linear-gradient(to bottom right, 
+    rgba(255, 215, 0, 0.1) 0%, 
+    rgba(255, 215, 0, 0) 100%
+  );
+}
+/*
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-tl {
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+*/
+
+/* الحركات المخصصة */
+@keyframes fade-in {
+  0% { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes slide-in-right {
+  0% { 
+    opacity: 0; 
+    transform: translateX(-30px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-out;
+}

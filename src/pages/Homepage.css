@@ -1,0 +1,43 @@
+.FinalLevel .CardTitle {
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  margin: 0 auto 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1)) /* #6366f1 */;
+}
+.FinalLevel .CardTitle::before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1)) /* #6366f1 */;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+}
+.line {
+  width: calc(100% - 112px);
+  height: 2px;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1)) /* #6366f1 */;
+  position: absolute;
+  z-index: 0;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.FinalLevel ul li::before {
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1)) /* #6366f1 */;
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  z-index: -1;
+}
