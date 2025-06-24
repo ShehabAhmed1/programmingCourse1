@@ -19,6 +19,8 @@ const curriculumLevels = [
     id: 1,
     title: "التأسيس التقني والبرمجي",
     duration: "12 أسبوع = 3 شهور",
+    mainprice: "3000 جنيه",
+    alertprice: "1500 جنيه فقط",
     icon: "BookOpen",
     color: "bg-blue-500",
     summary:
@@ -27,7 +29,6 @@ const curriculumLevels = [
       "بنهاية هذا المستوى، سيكون المتعلم قادراً على كتابة برامج Python بسيطة وفهم المفاهيم البرمجية الأساسية.",
     topics: [
       "مكونات الحاسوب وأنظمة التشغيل (Windows / Linux)",
-      "إدارة الملفات والمجلدات",
       "مبادئ الإنترنت والأمان الرقمي",
       "مقدمة إلى لغة Python",
       "المتغيرات وأنواع البيانات",
@@ -46,6 +47,8 @@ const curriculumLevels = [
     id: 2,
     title: "البرمجة المتقدمة والبرمجة الكائنية",
     duration: "12 أسبوع = 3 شهور",
+    mainprice: "3000 جنيه",
+    alertprice: " ترقبوا مفاجأة خاصه للطلبه المتميزين",
     icon: "Code",
     color: "bg-green-500",
     summary:
@@ -70,6 +73,8 @@ const curriculumLevels = [
     id: 3,
     title: "هياكل البيانات",
     duration: "12 أسبوع = 3 شهور",
+    mainprice: "3000 جنيه",
+    alertprice: " ترقبوا مفاجأة خاصه للطلبه المتميزين",
     icon: "Database",
     color: "bg-purple-500",
     summary:
@@ -95,6 +100,8 @@ const curriculumLevels = [
     id: 4,
     title: "الخوارزميات",
     duration: "12 أسبوع = 3 شهور",
+    mainprice: "3000 جنيه",
+    alertprice: " ترقبوا مفاجأة خاصه للطلبه المتميزين",
     icon: "Brain",
     color: "bg-red-500",
     summary:
@@ -121,6 +128,8 @@ const finalLevel = {
   id: 5,
   title: "التخصص",
   duration: "الفترة الزمنية تختلف بختلاف التخصص",
+  mainprice: "",
+  alertprice: "التكلفه تختلف بختلاف التخصص",
   icon: "Zap",
   color: "bg-indigo-500",
   topics: [
@@ -243,6 +252,16 @@ function Plancard({ level, visibleCards, renderIcon }) {
           <div className="bg-white/20 px-4 py-2 rounded-full">
             <span className="text-sm font-semibold">{level.duration}</span>
           </div>
+          <div className=" bg-emerald-400 px-8 py-2 rounded-4xl my-4 text-center">
+            <h1 className="my-4 text-xl font-bold scaleing">
+              عرض خاص للدفعه الاولي
+            </h1>
+            <span className="line-through decoration-red-500 text-xl">
+              {level.mainprice}
+            </span>
+            <span className="text-xl font-bold"> = </span>
+            <span className="text-xl font-bold"> {level.alertprice}</span>
+          </div>
         </div>
 
         <div className="flex-1 p-8">
@@ -303,6 +322,12 @@ function FinalLevel({ level, visibleCards, renderIcon }) {
           </h3>
           <div className="bg-white/20 px-4 py-2 rounded-full">
             <span className="text-sm font-semibold">{level.duration}</span>
+          </div>
+          <div className=" bg-emerald-400  p-4 rounded-4xl my-4 text-center">
+            <span className="line-through decoration-red-500 text-xl">
+              {level.mainprice}
+            </span>
+            <span className="text-xl font-bold"> {level.alertprice}</span>
           </div>
         </div>
 
