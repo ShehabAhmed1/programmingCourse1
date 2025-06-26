@@ -1,3 +1,5 @@
+import { IoLogoWhatsapp } from "react-icons/io";
+
 export default function Contact() {
   return (
     <section className="py-20  bg-primary">
@@ -20,6 +22,16 @@ export default function Contact() {
           </a>
         </div>
       </div>
+      <Whatsup />
     </section>
+  );
+}
+
+/***** whatsup icon ******/
+function Whatsup() {
+  return (
+    <a className="whatsup" href="https://wa.me/+201272073227?" target="_blank">
+      <IoLogoWhatsapp />
+    </a>
   );
 }

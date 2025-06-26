@@ -57,3 +57,24 @@
     scale: 1;
   }
 }
+
+.whatsup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 13px;
+  right: 13px;
+  font-size: 40px;
+  padding: 5px;
+  color: #03e003;
+  background-color: var(--white);
+  border-radius: 50%;
+  z-index: 1000;
+}
+@media (min-width: 765px) {
+  .whatsup {
+    bottom: 20px;
+    right: 20px;
+  }
+}

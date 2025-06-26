@@ -15,6 +15,7 @@ export default function Hero() {
 
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
         <div className="mb-8 animate-fade-in">
+          <div>KG Coding.</div>
           <FaGraduationCap className="w-20 h-20 mx-auto text-primary mb-4" />
           <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
             خارطة طريق البرمجة
