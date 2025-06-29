@@ -1,6 +1,8 @@
 import { IoLogoWhatsapp } from "react-icons/io";
-
+import { CtaButton } from "./Hero";
+import { useState } from "react";
 export default function Contact() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <section className="py-20  bg-primary">
       <div className="max-w-4xl mx-auto text-center px-6">
@@ -12,14 +14,7 @@ export default function Contact() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdMByW-b9qgMOoRXImmBH9XBYLveBUFqjp2GXEm7PSA8ju9kg/viewform?usp=dialog"
-            target="_blank"
-            size="lg"
-            className="bg-white px-10 py-4 text-xl font-semibold rounded-lg cursor-pointer hover:text-[#007acc] shadow-xl"
-          >
-            سجل الآن - عرض محدود
-          </a>
+          <CtaButton isHovered={isHovered} setIsHovered={setIsHovered} />
         </div>
       </div>
       <Whatsup />

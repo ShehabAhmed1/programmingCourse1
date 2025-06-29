@@ -4,6 +4,7 @@ import Hero from "../component/Hero";
 import Plan from "../component/Plan";
 import Contact from "../component/Contact";
 import Footer from "../component/Footer";
+import CourseAnnouncement from "../component/CourseAnnouncement";
 
 function Homepage() {
   return (
@@ -12,6 +13,7 @@ function Homepage() {
       className="min-h-screen bg-gradient-to-br from-blue-50 to-white font-cairo"
     >
       <Hero />
+      <CourseAnnouncement />
       <Plan />
       <Contact />
       <Footer />

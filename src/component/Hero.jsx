@@ -1,8 +1,12 @@
 import { FaGraduationCap, FaUsers, FaTrophy, FaStar } from "react-icons/fa";
-
+import { Decorative } from "./CourseAnnouncement";
+import { LuArrowLeft } from "react-icons/lu";
+import { useState } from "react";
 export default function Hero() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <Decorative />
       <div className="absolute inset-0 bg-gradient-primary-accent-20-10"></div>
       <div
         className="absolute inset-0 opacity-10"
@@ -27,14 +31,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-in-right">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdMByW-b9qgMOoRXImmBH9XBYLveBUFqjp2GXEm7PSA8ju9kg/viewform?usp=dialog"
-            target="_blank"
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-white shadow-lg px-8 py-4 text-lg font-semibold rounded-full hover:scale-110 duration-200 cursor-pointer"
-          >
-            التسجيل الآن
-          </a>
+          <CtaButton isHovered={isHovered} setIsHovered={setIsHovered} />
         </div>
 
         <div className="my-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -64,5 +61,29 @@ export default function Hero() {
         </div>
       </div>
     </section>
+  );
+}
+
+export function CtaButton({ isHovered, setIsHovered }) {
+  return (
+    <a
+      className={`group relative inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 ${
+        isHovered ? "scale-105 -translate-y-1" : ""
+      }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdMByW-b9qgMOoRXImmBH9XBYLveBUFqjp2GXEm7PSA8ju9kg/viewform?usp=dialog"
+      target="_blank"
+    >
+      <LuArrowLeft
+        className={`w-5 h-5 transition-transform duration-300 ${
+          isHovered ? "-translate-x-1" : ""
+        }`}
+      />
+      <span>احجز مقعدك</span>
+
+      {/* Button shine effect */}
+      {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" /> */}
+    </a>
   );
 }
