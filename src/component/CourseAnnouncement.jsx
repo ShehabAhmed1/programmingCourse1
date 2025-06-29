@@ -80,7 +80,7 @@ export default function CourseAnnouncement() {
   const [particlePositions, setParticlePositions] = useState([]);
 
   // Set course start date
-  const courseStartDate = useMemo(() => new Date("2025-07-04T17:00:00"), []);
+  const courseStartDate = useMemo(() => new Date("2025-07-11T17:00:00"), []);
 
   // Countdown timer
   useEffect(() => {
@@ -268,12 +268,12 @@ function RightContent({
 
       {/* Secondary Info */}
 
-      <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+      {/* <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
         <LuClock className="w-5 h-5 text-blue-500" />
         <span className="text-xl font-semibold text-gray-700">
-          اخر معاد لتدفع الرسوم : {formatDate(coursePayDate)}
+           اول محاضرة مجانا 
         </span>
-      </div>
+      </div> */}
 
       <CtaButton isHovered={isHovered} setIsHovered={setIsHovered} />
     </div>
