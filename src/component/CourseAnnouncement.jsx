@@ -21,6 +21,8 @@ import {
   FaLaptopCode,
 } from "react-icons/fa";
 
+import { BsPersonFill } from "react-icons/bs";
+
 import { CtaButton } from "./Hero";
 
 const courseFeatures = [
@@ -121,15 +123,19 @@ export default function CourseAnnouncement() {
       className="relative min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-indigo-100 overflow-hidden"
       dir="rtl"
     >
-      <Decorative />
-      <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col md:flex-row items-center min-h-screen">
-        <RightContent
-          formatDate={formatDate}
-          courseStartDate={courseStartDate}
-          isHovered={isHovered}
-          setIsHovered={setIsHovered}
-        />
-        <LeftContent timeLeft={timeLeft} />
+      <div className="main-container">
+        <div className="CourseAnnouncement-content">
+          <Decorative />
+          <div className="relative z-10 flex flex-col md:flex-row items-center min-h-screen">
+            <RightContent
+              formatDate={formatDate}
+              courseStartDate={courseStartDate}
+              isHovered={isHovered}
+              setIsHovered={setIsHovered}
+            />
+            <LeftContent timeLeft={timeLeft} />
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -159,7 +165,7 @@ function LeftContent({ timeLeft }) {
 
       <div className="relative">
         {/* Main Card */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 max-w-sm w-full">
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50  w-full">
           {/* Countdown Timer */}
           <div className="text-center mb-6">
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -211,7 +217,7 @@ function LeftContent({ timeLeft }) {
               className="text-xs text-gray-500 mt-1"
               style={{ fontFamily: "'Tajawal', 'Arial', sans-serif" }}
             >
-              2 مقعد متبقي
+              5 مقعد متبقي
             </div>
           </div>
         </div>
@@ -255,6 +261,11 @@ function RightContent({
         </span>
         <span className="text-gray-800">قريباً جداً</span>
       </h1>
+      <h2 className="flex items-center justify-center gap-2 text-2xl mb-10 font-bold bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent">
+        <BsPersonFill className="text-3xl text-green-500" />
+        متبقي 5 مقاعد فقط ..!
+      </h2>
+
       {/* FeatureSection */}
       <FeatureSection />
 

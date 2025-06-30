@@ -46,18 +46,6 @@
   animation: scaleing 1.8s linear infinite;
 }
 
-@keyframes scaleing {
-  from {
-    scale: 1;
-  }
-  50% {
-    scale: 1.3;
-  }
-  100% {
-    scale: 1;
-  }
-}
-
 .whatsup {
   display: flex;
   align-items: center;
@@ -72,9 +60,22 @@
   border-radius: 50%;
   z-index: 1000;
 }
+
 @media (min-width: 765px) {
   .whatsup {
     bottom: 20px;
     right: 20px;
+  }
+}
+
+@keyframes scaleing {
+  from {
+    scale: 1;
+  }
+  50% {
+    scale: 1.3;
+  }
+  100% {
+    scale: 1;
   }
 }

@@ -5,6 +5,8 @@ import Plan from "../component/Plan";
 import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 import CourseAnnouncement from "../component/CourseAnnouncement";
+import CourseRequirements from "../component/Requirements";
+import Questions from "../component/Questions";
 
 function Homepage() {
   return (
@@ -14,7 +16,9 @@ function Homepage() {
     >
       <Hero />
       <CourseAnnouncement />
+      <CourseRequirements />
       <Plan />
+      <Questions />
       <Contact />
       <Footer />
     </div>

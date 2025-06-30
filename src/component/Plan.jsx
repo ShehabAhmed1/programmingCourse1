@@ -10,10 +10,10 @@ import {
   FaLaptopCode,
   FaServer,
   FaUserShield,
+  FaMobile,
 } from "react-icons/fa";
 import { BiBarChartAlt2 } from "react-icons/bi";
 import { GiArtificialIntelligence, GiBrain } from "react-icons/gi";
-
 const curriculumLevels = [
   {
     id: 1,
@@ -127,9 +127,9 @@ const curriculumLevels = [
 const finalLevel = {
   id: 5,
   title: "التخصص",
-  duration: "الفترة الزمنية تختلف بختلاف التخصص",
+  duration: "الفترة الزمنية تختلف باختلاف التخصص",
   mainprice: "",
-  alertprice: "التكلفه تختلف بختلاف التخصص",
+  alertprice: "التكلفه تختلف باختلاف التخصص",
   icon: "Zap",
   color: "bg-indigo-500",
   topics: [
@@ -142,6 +142,11 @@ const finalLevel = {
       name: "Backend Web",
       icon: <FaServer />,
       color: "bg-green-500",
+    },
+    {
+      name: "Mobile",
+      icon: <FaMobile />,
+      color: "bg-sky-400",
     },
     {
       name: "Data Science",
@@ -198,33 +203,37 @@ export default function Plan() {
   };
 
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            رحلة التعلم المنظمة
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            اربع مستويات مدروسة بعناية لضمان التطور المستمر والتدرج من الأساسيات
-            إلى التخصص
-          </p>
-        </div>
+    <section className="Plans">
+      <div className="main-container">
+        <div className="Plan-content">
+          <div className="mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                رحلة التعلم المنظمة
+              </h2>
+              <p className="text-xl text-gray-600 mx-auto">
+                اربع مستويات مدروسة بعناية لضمان التطور المستمر والتدرج من
+                الأساسيات إلى التخصص
+              </p>
+            </div>
 
-        <div className="space-y-8">
-          {curriculumLevels.map((level) => (
-            <Plancard
-              key={level.id}
-              level={level}
-              visibleCards={visibleCards}
-              renderIcon={renderIcon}
-            />
-          ))}
+            <div className="space-y-8">
+              {curriculumLevels.map((level) => (
+                <Plancard
+                  key={level.id}
+                  level={level}
+                  visibleCards={visibleCards}
+                  renderIcon={renderIcon}
+                />
+              ))}
 
-          <FinalLevel
-            level={finalLevel}
-            visibleCards={visibleCards}
-            renderIcon={renderIcon}
-          />
+              <FinalLevel
+                level={finalLevel}
+                visibleCards={visibleCards}
+                renderIcon={renderIcon}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
