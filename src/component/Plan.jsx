@@ -12,6 +12,7 @@ import {
   FaUserShield,
   FaMobile,
 } from "react-icons/fa";
+import { IoLogoGameControllerB } from "react-icons/io";
 import { BiBarChartAlt2 } from "react-icons/bi";
 import { GiArtificialIntelligence, GiBrain } from "react-icons/gi";
 const curriculumLevels = [
@@ -133,37 +134,19 @@ const finalLevel = {
   icon: "Zap",
   color: "bg-indigo-500",
   topics: [
-    {
-      name: "Frontend Web",
-      icon: <FaLaptopCode />,
-      color: "bg-blue-500",
-    },
-    {
-      name: "Backend Web",
-      icon: <FaServer />,
-      color: "bg-green-500",
-    },
-    {
-      name: "Mobile",
-      icon: <FaMobile />,
-      color: "bg-sky-400",
-    },
-    {
-      name: "Data Science",
-      icon: <BiBarChartAlt2 />,
-      color: "bg-yellow-500",
-    },
+    { name: "Frontend Web", icon: <FaLaptopCode />, color: "bg-blue-500" },
+    { name: "Backend Web", icon: <FaServer />, color: "bg-green-500" },
+    { name: "Mobile", icon: <FaMobile />, color: "bg-sky-400" },
+    { name: "Gaming", icon: <IoLogoGameControllerB />, color: "bg-purple-700" },
+    { name: "Data Science", icon: <BiBarChartAlt2 />, color: "bg-yellow-500" },
     {
       name: "AI & ML",
       icon: <GiArtificialIntelligence />,
       color: "bg-purple-500",
     },
-    {
-      name: "Cybersecurity",
-      icon: <FaUserShield />,
-      color: "bg-red-500",
-    },
+    { name: "Cybersecurity", icon: <FaUserShield />, color: "bg-cyan-600" },
   ],
+
   project: "مشروع تخرج مخصص حسب المسار المختار",
 };
 const iconComponents = {

@@ -79,7 +79,6 @@ export default function CourseAnnouncement() {
   });
 
   const [isHovered, setIsHovered] = useState(false);
-  const [particlePositions, setParticlePositions] = useState([]);
 
   // Set course start date
   const courseStartDate = useMemo(() => new Date("2025-07-11T17:00:00"), []);
@@ -120,7 +119,7 @@ export default function CourseAnnouncement() {
 
   return (
     <section
-      className="relative min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-indigo-100 overflow-hidden"
+      className="relative min-h-screen bg-gradient-to-br from-blue-50 via-green-50/50 to-indigo-50 overflow-hidden"
       dir="rtl"
     >
       <div className="main-container">
@@ -184,7 +183,7 @@ function LeftContent({ timeLeft }) {
                 { label: "ساعة", value: timeLeft.hours },
                 { label: "دقيقة", value: timeLeft.minutes },
                 { label: "ثانية", value: timeLeft.seconds },
-              ].map((item, index) => (
+              ].map((item) => (
                 <div key={item.label} className="text-center">
                   <div className="bg-gradient-to-br from-blue-500 to-green-500 text-white rounded-xl p-3 mb-1 shadow-lg">
                     <span className="text-lg font-bold">
@@ -239,8 +238,6 @@ function RightContent({
   isHovered,
   setIsHovered,
 }) {
-  const coursePayDate = useMemo(() => new Date("2025-07-01T17:00:00"), []);
-
   return (
     <div
       className="lg:w-1/2 text-center lg:text-right mb-12 lg:mb-0"
@@ -256,8 +253,8 @@ function RightContent({
 
       {/* Main Headline */}
       <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight pt-4">
-        <span className="bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent">
-          الدورة تبدأ
+        <span className="bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent leading-loose ">
+          الدفعة الاولي تبدأ
         </span>
         <span className="text-gray-800">قريباً جداً</span>
       </h1>

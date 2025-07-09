@@ -22,7 +22,7 @@
   --card: #ffffff;
   --card-foreground: #111827;
   --radius: 0.5rem;
-  
+
   /* متغيرات التدرج */
   --tw-gradient-from: #000000;
   --tw-gradient-to: transparent;
@@ -31,7 +31,7 @@
 }
 
 body {
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 /* فئات CSS مخصصة */
@@ -159,84 +159,33 @@ body {
 }
 
 /* فئات التدرج المباشرة */
-/*.bg-gradient-primary-accent {
-  background-image: linear-gradient(to bottom right, 
-    rgba(0, 122, 204, 0.2) 0%, 
-    rgba(255, 215, 0, 0.1) 100%
-  );
-}*/
 
 .bg-gradient-primary-accent-20-10 {
-  background-image: linear-gradient(to bottom right, 
-    rgba(0, 122, 204, 0.2) 0%, 
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 122, 204, 0.2) 0%,
     rgba(255, 215, 0, 0.1) 100%
   );
-}*/
-
-.bg-gradient-primary-20 {
-  background-image: linear-gradient(to bottom right, 
-    rgba(0, 122, 204, 0.2) 0%, 
+}
+*/ .bg-gradient-primary-20 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 122, 204, 0.2) 0%,
     rgba(0, 122, 204, 0) 100%
   );
 }
 
 .bg-gradient-accent-10 {
-  background-image: linear-gradient(to bottom right, 
-    rgba(255, 215, 0, 0.1) 0%, 
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 215, 0, 0.1) 0%,
     rgba(255, 215, 0, 0) 100%
   );
 }
-/*
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-l {
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-bl {
-  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-tl {
-  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-tr {
-  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-*/
 
 /* الحركات المخصصة */
-@keyframes fade-in {
-  0% { 
-    opacity: 0; 
-    transform: translateY(20px); 
-  }
-  100% { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
-}
-
-@keyframes slide-in-right {
-  0% { 
-    opacity: 0; 
-    transform: translateX(-30px); 
-  }
-  100% { 
-    opacity: 1; 
-    transform: translateX(0); 
-  }
+.scale-out {
+  animation: scale-out 0.8s ease-in-out infinite alternate;
 }
 
 .animate-fade-in {
@@ -245,4 +194,35 @@ body {
 
 .animate-slide-in-right {
   animation: slide-in-right 0.5s ease-out;
+}
+
+@keyframes scale-out {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

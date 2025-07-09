@@ -32,10 +32,10 @@ const CourseRequirements = () => {
 
   return (
     <section
-      className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50"
+      className="min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-purple-100/65"
       dir="rtl"
     >
-      <div className="main-container">
+      <div className="main-container ">
         <div className="requirements-content">
           <div className="mx-auto">
             {/* Header Section */}
