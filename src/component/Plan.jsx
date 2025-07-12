@@ -21,7 +21,7 @@ const curriculumLevels = [
     title: "التأسيس التقني والبرمجي",
     duration: "12 أسبوع = 3 شهور",
     mainprice: "3000 جنيه",
-    alertprice: "1500 جنيه فقط",
+    alertprice: "2000 جنيه فقط",
     icon: "BookOpen",
     color: "bg-blue-500",
     summary:
@@ -246,7 +246,7 @@ function Plancard({ level, visibleCards, renderIcon }) {
           </div>
           <div className=" bg-emerald-400 px-8 py-2 rounded-4xl my-4 text-center">
             <h1 className="my-4 text-xl font-bold scaleing">
-              عرض خاص للدفعه الاولي
+              عرض خاص للدفعه الثانية
             </h1>
             <span className="line-through decoration-red-500 text-xl">
               {level.mainprice}

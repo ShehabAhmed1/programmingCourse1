@@ -166,7 +166,7 @@ function LeftContent({ timeLeft }) {
         {/* Main Card */}
         <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50  w-full">
           {/* Countdown Timer */}
-          <div className="text-center mb-6">
+          {/* <div className="text-center mb-6">
             <div className="flex items-center justify-center gap-2 mb-4">
               <span
                 className="text-sm font-medium text-gray-600"
@@ -199,6 +199,10 @@ function LeftContent({ timeLeft }) {
                 </div>
               ))}
             </div>
+          </div> */}
+
+          <div className="bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent leading-loose text-2xl">
+            الدورة تبدا قريبا{" "}
           </div>
 
           {/* Progress Indicator */}
@@ -216,7 +220,7 @@ function LeftContent({ timeLeft }) {
               className="text-xs text-gray-500 mt-1"
               style={{ fontFamily: "'Tajawal', 'Arial', sans-serif" }}
             >
-              5 مقعد متبقي
+              10 مقاعد متبقيه
             </div>
           </div>
         </div>
@@ -254,25 +258,26 @@ function RightContent({
       {/* Main Headline */}
       <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight pt-4">
         <span className="bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent leading-loose ">
-          الدفعة الاولي تبدأ
+          تم فتح باب الحجز للدفعه الثانيه
         </span>
-        <span className="text-gray-800">قريباً جداً</span>
+        {/* <span className="text-gray-800">قريباً </span> */}
       </h1>
-      <h2 className="flex items-center justify-center gap-2 text-2xl mb-10 font-bold bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent">
+
+      {/* <h2 className="flex items-center justify-center gap-2 text-2xl mb-10 font-bold bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent">
         <BsPersonFill className="text-3xl text-green-500" />
         متبقي 5 مقاعد فقط ..!
-      </h2>
+      </h2> */}
 
       {/* FeatureSection */}
       <FeatureSection />
 
       {/* Start Date */}
-      <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+      {/* <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
         <LuCalendar className="w-6 h-6 text-blue-500" />
         <span className="text-xl font-semibold text-gray-700">
           المحاضرة الاولي: {formatDate(courseStartDate)}
         </span>
-      </div>
+      </div> */}
 
       {/* Secondary Info */}
 
