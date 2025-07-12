@@ -21,7 +21,7 @@ const curriculumLevels = [
     title: "التأسيس التقني والبرمجي",
     duration: "12 أسبوع = 3 شهور",
     mainprice: "3000 جنيه",
-    alertprice: "2000 جنيه فقط",
+    alertprice: "1500 جنيه فقط",
     icon: "BookOpen",
     color: "bg-blue-500",
     summary:
