@@ -107,7 +107,7 @@ const Questions = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-purple-50" dir="rtl">
+    <section className="bg-gradient-to-br from-blue-50 to-purple-50" id="faq">
       <div className="main-container">
         <div className="question-content">
           <div className="mx-auto">

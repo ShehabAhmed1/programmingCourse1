@@ -1,5 +1,5 @@
 import { FaGraduationCap } from "react-icons/fa";
-import banner from "../img/circular_shehab4.png";
+import banner from "../assets/img/circular_shehab4.png";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
               <p className="text-gray-400 mt-2">نبني مستقبل التكنولوجيا معاً</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-center">
               <div>
                 <h4 className="font-semibold mb-4">تواصل معنا</h4>
                 <p className="text-gray-400">
@@ -46,11 +46,13 @@ export default function Footer() {
                   </button>
                 </div>
               </div>
-              <Figure />
+              {/* <Figure /> */}
             </div>
 
             <div className="border-t border-gray-700 pt-8">
-              <p className="text-gray-400">© 2024 . جميع الحقوق محفوظة</p>
+              <p className="text-gray-400">
+                Crafted with ❤️ by the CodeJourney Team
+              </p>
             </div>
           </div>
         </div>
@@ -59,12 +61,12 @@ export default function Footer() {
   );
 }
 /** information in contact + img at the end */
-function Figure() {
-  return (
-    <div className="contact-info">
-      <figure>
-        <img className="banner" src={banner} alt="banner" />
-      </figure>
-    </div>
-  );
-}
+// function Figure() {
+//   return (
+//     <div className="contact-info">
+//       <figure>
+//         <img className="banner" src={banner} alt="banner" />
+//       </figure>
+//     </div>
+//   );
+// }

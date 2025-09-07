@@ -186,7 +186,7 @@ export default function Plan() {
   };
 
   return (
-    <section className="Plans">
+    <section className="Plans" id="plan">
       <div className="main-container">
         <div className="Plan-content">
           <div className="mx-auto">

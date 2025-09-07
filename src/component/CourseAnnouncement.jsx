@@ -120,7 +120,7 @@ export default function CourseAnnouncement() {
   return (
     <section
       className="relative min-h-screen bg-gradient-to-br from-blue-50 via-green-50/50 to-indigo-50 overflow-hidden"
-      dir="rtl"
+      id="course-announcement"
     >
       <div className="main-container">
         <div className="CourseAnnouncement-content">

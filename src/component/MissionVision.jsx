@@ -46,9 +46,9 @@ const MissionVision = () => {
   ];
 
   return (
-    <div
+    <section
       className="min-h-screen bg-gradient-to-br from-blue-100 via-green-50 to-indigo-100 text-gray-900"
-      dir="rtl"
+      id="about"
     >
       <div className="relative z-10 container mx-auto px-4 py-20">
         {/* Header */}
@@ -197,7 +197,7 @@ const MissionVision = () => {
           </div>
         </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

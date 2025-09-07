@@ -33,7 +33,7 @@ const CourseRequirements = () => {
   return (
     <section
       className="min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-purple-100/65"
-      dir="rtl"
+      id="requirements"
     >
       <div className="main-container ">
         <div className="requirements-content">

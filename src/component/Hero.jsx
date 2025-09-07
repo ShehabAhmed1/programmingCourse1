@@ -5,7 +5,10 @@ import { useState } from "react";
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      id="Hero"
+    >
       <div className="main-container">
         <div className="hero-content">
           <Decorative />
