@@ -44,7 +44,7 @@ export const students = [
   {
     id: 4,
     name: "يوسف محمد",
-    title: "المستكشف",
+    title: "الموهوب المتكاسل",
     avatar: youssef_mohamed,
     level: 5,
     points: 100,
