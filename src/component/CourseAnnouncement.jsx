@@ -258,7 +258,7 @@ function RightContent({
       {/* Main Headline */}
       <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight pt-4">
         <span className="bg-gradient-to-r from-blue-600 via-green-600 to-indigo-600 bg-clip-text text-transparent leading-loose ">
-          تم فتح باب الحجز للدفعه الثانيه
+          تم فتح باب الحجز
         </span>
         {/* <span className="text-gray-800">قريباً </span> */}
       </h1>

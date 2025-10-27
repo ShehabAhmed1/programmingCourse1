@@ -11,7 +11,7 @@ const CourseRequirements = () => {
     {
       id: 1,
       icon: <FaCalendarAlt className="w-6 h-6 text-blue-600" />,
-      text: "أن يكون عمر المشترك 13 سنة أو أكثر.",
+      text: "أن يكون عمر المشترك 15 سنة أو أكثر.",
     },
     {
       id: 2,
