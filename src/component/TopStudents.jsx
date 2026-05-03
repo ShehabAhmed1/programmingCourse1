@@ -98,7 +98,7 @@ const StudentCard = ({ student }) => {
   const Icon = student.icon;
   return (
     <div
-      className="cursor-pointer w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex-shrink-0 px-2"
+      className="cursor-pointer w-full md:w-1/2 lg:w-1/3 xl:w-1/3 flex-shrink-0 px-2"
       dir="rtl"
     >
       <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden transition-all duration-300 group hover:scale-105 hover:shadow-2xl h-full">
@@ -143,11 +143,6 @@ const StudentCard = ({ student }) => {
               {student.title}
             </p>
             <Stars level={student.level} />
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 inline-block">
-              <span className="text-sm font-semibold">
-                {student.points.toLocaleString()} Points
-              </span>
-            </div>
           </div>
 
           {/* Button */}

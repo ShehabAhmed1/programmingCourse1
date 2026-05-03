@@ -6,7 +6,6 @@ const links = [
   { name: "من نحن", href: "#about" },
   { name: "شروط الالتحاق", href: "#requirements" },
   { name: "طلابنا", href: "#top-students" },
-  { name: "الخطه العامه", href: "#plan" },
   { name: "الاسئلة", href: "#faq" },
   // { name: "ابدأ الآن", href: "#get-started", className: "bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition" },
 ];

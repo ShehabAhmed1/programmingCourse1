@@ -24,7 +24,7 @@ function Homepage() {
       <CourseRequirements />
       <CourseAnnouncement />
       <TopStudents dir="ltr" />
-      <Plan />
+      {/* <Plan /> */}
       <Questions />
       <Contact />
       <Footer />
