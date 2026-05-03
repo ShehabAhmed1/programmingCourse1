@@ -1,7 +1,6 @@
 import React from "react";
-import "./HomePage.css";
+import "./Homepage.css";
 import Hero from "../component/Hero";
-import Plan from "../component/Plan";
 import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 import CourseAnnouncement from "../component/CourseAnnouncement";
